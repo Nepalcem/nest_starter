@@ -87,3 +87,12 @@ Creates controller for "users". Controllers are responsible for handling incomin
 nest g service users
 ```
 Creates service (provider) for "users"
+
+## Pipes
+
+"ParseIntPipe" - is a pre-made pipe which allows to transplant data to numeric format, e.g. make routes to accept only data in that format and return corresponding errors if data is in different format, and also provide an additional layer of data validation .
+
+
+## Validation decorators
+
+https://github.com/typestack/class-validator?tab=readme-ov-file#validation-decorators
