@@ -64,12 +64,6 @@ Check out a few resources that may come in handy when working with NestJS:
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
 ## Configuring
 
 ```bash
@@ -81,18 +75,58 @@ Creates new "users" module / folder
 ```bash
 nest g controller users
 ```
+
 Creates controller for "users". Controllers are responsible for handling incoming requests and returning responses to a client;
 
 ```bash
 nest g service users
 ```
+
 Creates service (provider) for "users"
 
 ## Pipes
 
 "ParseIntPipe" - is a pre-made pipe which allows to transplant data to numeric format, e.g. make routes to accept only data in that format and return corresponding errors if data is in different format, and also provide an additional layer of data validation .
 
-
 ## Validation decorators
 
 https://github.com/typestack/class-validator?tab=readme-ov-file#validation-decorators
+
+## Prisma initial migration command:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+## Additional packages
+
+```bash
+npm i prisma -D
+```
+
+```bash
+npm i class-validator class-transformer
+```
+
+```bash
+npm install @nestjs/mapped-types
+```
+
+## Regenerating Prisma structure after making changes to the model
+
+```bash
+npx prisma generate
+```
+
+## Creating database module
+
+```bash
+nest g module database
+nest g service database
+```
+
+## Creating global module/service/controller for REST API with DB
+
+```bash
+nest g resource employees
+```
