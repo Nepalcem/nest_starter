@@ -81,9 +81,9 @@ Creates new "users" module / folder
 ```bash
 nest g controller users
 ```
-Creates controller for "users"
+Creates controller for "users". Controllers are responsible for handling incoming requests and returning responses to a client;
 
 ```bash
 nest g service users
 ```
-Creates service for "users"
+Creates service (provider) for "users"
