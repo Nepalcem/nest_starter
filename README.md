@@ -130,3 +130,15 @@ nest g service database
 ```bash
 nest g resource employees
 ```
+
+## Rate Limiting the server
+
+```bash
+npm i @nestjs/throttler
+```
+
+## Custom Logger
+```bash
+nest g module my-logger
+nest g service my-logger
+```
